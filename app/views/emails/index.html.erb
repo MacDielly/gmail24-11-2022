@@ -1,0 +1,28 @@
+<h1>3615GnéMail!</h1>
+<h4>Un service qu'il est bon de l'avoir.</h4>
+<br>
+<br>
+
+<main>
+    <div>
+        <div class="row">
+            <div class="column">
+                <h2>Email list</h2>
+                <% @email.each do |email| %>
+                <hr>
+                email n° <%= email.id %>
+                <%= email.object %>
+                <br>
+                <%= email.body %>
+                <br>
+                <br>
+                <% end %>
+            </div>
+
+            <div class="column">
+                <h2>Email selected</h2>
+                <p>Beebop Lula</p>
+            </div>
+        </div>
+    </div>
+</main>
