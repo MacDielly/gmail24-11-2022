@@ -5,23 +5,30 @@
 
 <main>
     <div>
+        <div class="button-row">
+            <%# <button type="button" class="btn btn-primary btn-lg">Receive email</button> %>
+            <%= button_to "Receive email", emails_path, :method => "post", class:"btn btn-primary btn-lg" %>
+        </div>
         <div class="row">
             <div class="column">
                 <h2>Email list</h2>
                 <% @email.each do |email| %>
                 <hr>
-                email n° <%= email.id %>
+                email n° <%= email.id %> 
                 <%= email.object %>
                 <br>
                 <%= email.body %>
                 <br>
                 <br>
+                <%= button_to "Delete", class:"btn btn-danger" %>
+                <%= button_to "Mark as read", class:"btn btn-success" %>
                 <% end %>
             </div>
 
             <div class="column">
                 <h2>Email selected</h2>
                 <p>Beebop Lula</p>
+                
             </div>
         </div>
     </div>

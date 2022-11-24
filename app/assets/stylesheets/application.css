@@ -24,3 +24,16 @@
     margin: 2rem;
     padding: 1rem;
 }
+
+.button-row {
+    display: flex;
+    margin: 1rem;
+}
+
+.btn-lg {
+    max-width: 10rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
